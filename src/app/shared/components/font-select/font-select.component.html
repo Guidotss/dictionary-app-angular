@@ -1,0 +1,12 @@
+<div>
+  <span class="cursor-pointer flex w-20" (click)="toggleFontSelect()">
+    {{currentFont}}
+  </span>
+  <ul class="flex flex-col absolute bg-gunmetal py-3 rounded-xl shadow-purple shadow-lg mt-2" *ngIf="isFontSelectopen">
+    <li *ngFor="let font of fonts" [ngClass]="{'text-purple': currentFont == font}"
+      (click)="changeFont(font)"
+      class="hover:bg-gray-600 hover:bg-opacity-20 px-5 cursor-pointer text-sm font-semibold">
+      {{font}}
+    </li>
+  </ul>
+</div>
