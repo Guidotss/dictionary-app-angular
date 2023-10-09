@@ -6,18 +6,20 @@ import { BookIconComponent } from './components/book-icon/book-icon.component';
 import { ThemeSelectComponent } from './components/theme-select/theme-select.component';
 import { MoonIconComponent } from './components/moon-icon/moon-icon.component';
 import { FontSelectComponent } from './components/font-select/font-select.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 
 
 
 @NgModule({
   declarations: [
-    DictionaryPageComponent,
-    NavBarComponent,
     BookIconComponent,
-    ThemeSelectComponent,
+    DictionaryPageComponent,
+    FontSelectComponent,
     MoonIconComponent,
-    FontSelectComponent
+    NavBarComponent,
+    SearchBoxComponent,
+    ThemeSelectComponent,
   ],
   imports: [
     CommonModule

@@ -1,0 +1,10 @@
+<div class="w-full flex items-center justify-center mt-5">
+  <input
+    class="bg-gunmetal w-[55vw] rounded-lg px-10 py-4 text-white font-semibold"
+    placeholder="Search word..."
+    [value]="initialValue"
+    (keyup.enter)="emitValue(textSearchBox.value)"
+    #txtSearchBox
+
+  />
+</div>
