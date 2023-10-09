@@ -8,7 +8,6 @@ export class SearchBoxComponent {
   @Input() public initialValue : string = "Keyboard";
   @Output() public onValue = new EventEmitter();
 
-
   emitValue(value: string){
     this.onValue.emit(value);
   }

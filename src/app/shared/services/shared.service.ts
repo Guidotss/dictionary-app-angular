@@ -6,9 +6,7 @@ export class SharedService {
   constructor() {}
   public currentFont: Font = "Sans Serif";
 
-
   public changeFont(font: Font): void {
     this.currentFont = font;
   }
-
 }

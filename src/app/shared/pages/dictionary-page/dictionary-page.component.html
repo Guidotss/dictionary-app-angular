@@ -2,5 +2,7 @@
   <shared-nav-bar></shared-nav-bar>
 </header>
 <section>
-  <shared-search-box></shared-search-box>
+  <shared-search-box
+    (onValue)="emitValue($event)"
+  ></shared-search-box>
 </section>
