@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Font } from 'src/app/types/font.type';
 
+
 @Injectable({providedIn: 'root'})
 export class SharedService {
   constructor() {}

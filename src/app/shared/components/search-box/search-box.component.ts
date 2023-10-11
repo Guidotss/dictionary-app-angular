@@ -5,6 +5,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   templateUrl: './search-box.component.html',
 })
 export class SearchBoxComponent {
+
+  constructor(){}
+
   @Input() public initialValue : string = "Keyboard";
   @Output() public onValue = new EventEmitter();
 

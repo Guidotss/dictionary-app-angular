@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { environment } from 'src/environment/environment';
+import { map } from 'rxjs';
+import { WordDefinitionService } from 'src/app/word-definition/services/word-definition.service';
 
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'shared-dictionary-page',
@@ -8,7 +10,12 @@ import { environment } from 'src/environment/environment';
 })
 export class DictionaryPageComponent {
   private readonly apiUrl = environment.apiUrl;
-  emitValue(value: string){
-    console.log(`${this.apiUrl}${value}`);
+  public wordDefinition: any;
+  constructor(private readonly wordDefinitionService: WordDefinitionService) {}
+
+  public searchWord(value: string) {
+    this.wordDefinitionService.searchWord(value).subscribe((data) => {
+      this.wordDefinition = data;
+    });
   }
 }

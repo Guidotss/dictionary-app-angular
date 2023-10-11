@@ -7,6 +7,7 @@ import { ThemeSelectComponent } from './components/theme-select/theme-select.com
 import { MoonIconComponent } from './components/moon-icon/moon-icon.component';
 import { FontSelectComponent } from './components/font-select/font-select.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { WordDefinitionModule } from '../word-definition/word-definition.module';
 
 
 
@@ -22,7 +23,7 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     ThemeSelectComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     DictionaryPageComponent
